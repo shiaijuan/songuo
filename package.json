@@ -1,0 +1,26 @@
+{
+  "name": "songuo",
+  "version": "1.0.0",
+  "description": "songuo ui is a collection of commonly used style components.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shiaijuan/songuo.git"
+  },
+  "keywords": [
+    "ui",
+    "css",
+    "web",
+    "pc",
+    "sass",
+    "responsive"
+  ],
+  "author": "angie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shiaijuan/songuo/issues"
+  },
+  "homepage": "https://github.com/shiaijuan/songuo#readme"
+}
