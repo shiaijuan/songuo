@@ -39,6 +39,18 @@
 
       },
 
+      postcss: {
+          options: {
+              map: true,
+              processors: [
+                  require('autoprefixer')
+              ]
+          },
+          dist: {
+              src: 'dist/css/*.css'
+          }
+      },
+
       //watch插件的配置信息,真正实现自动化
       watch:{
           build: {
@@ -58,12 +70,12 @@
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  //grunt.loadNpmTasks('grunt-autoprefixer');
+  grunt.loadNpmTasks('grunt-postcss');
   grunt.loadNpmTasks('grunt-contrib-sass');
   
   
   // 告诉grunt当我们在终端中输入grunt时需要做些什么（注意先后顺序）
   // 你是希望先检查语法呢？还是先合并呢？肯定是先检查语法，所以要注意先后顺序
-  grunt.registerTask('default', ['sass','jshint', 'uglify','watch']);
+  grunt.registerTask('default', ['sass','postcss:dist','jshint', 'uglify','watch']);
   
 };

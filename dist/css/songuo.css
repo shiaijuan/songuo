@@ -4,6 +4,10 @@
 .saj h1 {
   font-size: 20px;
   color: #f00;
+  border-radius: 4px;
+}
+.saj ::placeholder {
+  color: #f00;
 }
 
 /*# sourceMappingURL=songuo.css.map */
