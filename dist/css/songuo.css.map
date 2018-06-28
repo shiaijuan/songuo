@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AACE,MAAC;EACC,eAAe,EAAE,IAAI;;AAEvB,OAAE;EACA,SAAS,EAAC,IAAI;EACd,KAAK,EAAE,IAAI;EACX,aAAa,EAAE,GAAG;;AAEpB,kBAAa;EACX,KAAK,EAAC,IAAI",
-"sources": ["../../src/sass/songuo.scss"],
-"names": [],
-"file": "songuo.css"
-}

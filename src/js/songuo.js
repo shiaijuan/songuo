@@ -6,3 +6,6 @@
 	var sum = add(10,100);
 	console.log(sum);
 })(window);
+
+
+$(".saj").on("click",function(){console.log(5);})
