@@ -1,16 +1,2 @@
-@import "compass/css3";
-@import "compass/reset";
-.saj{
-  a{
-    text-decoration: none;
-  }
-  h1{
-    font-size:20px;
-    color: #f00;
-    @include border-radius(5px);
-  }
-  ::placeholder{
-    color:#f00;
-  }
-}
-
+@import "reset";
+@import "button";

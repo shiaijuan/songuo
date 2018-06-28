@@ -1,0 +1,19 @@
+// ----------------------------------------------
+// Size - Height & Width
+// ----------------------------------------------
+.h-full {
+  height: 100%
+}
+
+.w-full {
+  width: 100% !important;
+}
+
+@for $counter from 1 through 12 {
+  .h-#{ $counter * 50 } {
+    height: ($counter * 50px) !important;
+  }
+  .w-#{ $counter * 50 } {
+    width: ($counter * 50px) !important;
+  }
+}

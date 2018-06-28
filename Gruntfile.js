@@ -63,7 +63,7 @@
                     fontsDir: './dist/font',
                     outputStyle: 'expanded',
                     environment: 'production',
-                    watch: true
+                    //watch: true
                 }
             }
         },
@@ -94,6 +94,6 @@
     // 告诉grunt当我们在终端中输入grunt时需要做些什么（注意先后顺序）
     // 你是希望先检查语法呢？还是先合并呢？肯定是先检查语法，所以要注意先后顺序
     //grunt.registerTask('default', ['sass','postcss:dist','jshint', 'uglify','watch']);
-    grunt.registerTask('default', ['compass', 'jshint', 'uglify', 'watch']);
+    grunt.registerTask('default', [ 'jshint', 'uglify','compass','watch']);
 
 };
