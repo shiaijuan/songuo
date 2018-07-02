@@ -63,7 +63,7 @@
                     fontsDir: './dist/font',
                     outputStyle: 'expanded',
                     environment: 'production',
-                    //watch: true
+                    watch: true
                 }
             }
         },

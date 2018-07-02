@@ -1,0 +1,42 @@
+/*
+Error: Invalid GBK character "\xE6"
+        on line 8 of F:/UI/songuo/./src/sass/variables.scss
+
+3: // --------------------------------------------------
+4: 
+5: 
+6: //== color
+7: //
+8: //## 松果ui的主色调
+9: 
+10: $gray-base:              #000;
+11: $gray-darker:            lighten($gray-base, 13.5%); // #222
+12: $gray-dark:              lighten($gray-base, 20%);   // #333
+13: $gray:                   lighten($gray-base, 33.5%); // #555
+
+Backtrace:
+F:/UI/songuo/./src/sass/variables.scss:8
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/util.rb:1325:in `rescue in block in find_encoding_error'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/util.rb:1322:in `block in find_encoding_error'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/util.rb:1321:in `each'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/util.rb:1321:in `each_with_index'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/util.rb:1321:in `find_encoding_error'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/util.rb:930:in `check_sass_encoding'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/engine.rb:439:in `check_encoding!'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/engine.rb:395:in `_to_tree'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/engine.rb:284:in `render'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:331:in `block in watch'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid GBK character \"\xE6\"\A         on line 8 of F:/UI/songuo/./src/sass/variables.scss\A \A 3: // --------------------------------------------------\A 4: \A 5: \A 6: //== color\A 7: //\A 8: //## 松果ui的主色调\A 9: \A 10: $gray-base:              #000;\A 11: $gray-darker:            lighten($gray-base, 13.5%); // #222\A 12: $gray-dark:              lighten($gray-base, 20%);   // #333\A 13: $gray:                   lighten($gray-base, 33.5%); // #555"; }
