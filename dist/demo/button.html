@@ -7,43 +7,104 @@
     <link rel="stylesheet" href="../css/songuo.css">
     <style>
         .sg-box{
-            border:1px solid #ddd;
             padding:20px;
         }
         .sg-box-row{
             margin-bottom:15px;
         }
+        .sg-box-row button{
+            margin-bottom:10px;
+            margin-right: 10px;
+        }
         .sg-box-row:last-child{
             margin-bottom:0;
+        }
+        .sg-h5{
+            border-bottom:1px solid #ddd;
+            margin:0 0 15px;
+            line-height: 2.2em;
+            font-size:16px;
+            color: #555;
         }
     </style>
 </head>
 <body>
     <div class="sg-box">
+        <h5 class="sg-h5">基础按钮</h5>
         <div class="sg-box-row">
             <button type="button" class="sg-btn sg-btn-default">默认按钮</button>
-            <button type="button" class="sg-btn sg-btn-primary m-l-10">默认按钮</button>
-            <button type="button" class="sg-btn sg-btn-success m-l-10">默认按钮</button>
-            <button type="button" class="sg-btn sg-btn-info m-l-10">默认按钮</button>
-            <button type="button" class="sg-btn sg-btn-warning m-l-10">默认按钮</button>
-            <button type="button" class="sg-btn sg-btn-danger m-l-10">默认按钮</button>
+            <button type="button" class="sg-btn sg-btn-primary">主要按钮</button>
+            <button type="button" class="sg-btn sg-btn-success">成功按钮</button>
+            <button type="button" class="sg-btn sg-btn-info">信息按钮</button>
+            <button type="button" class="sg-btn sg-btn-warning">警告按钮</button>
+            <button type="button" class="sg-btn sg-btn-danger">危险按钮</button>
         </div>
+        <h5 class="sg-h5">禁用按钮</h5>
         <div class="sg-box-row">
             <button type="button" class="sg-btn sg-btn-default" disabled>默认按钮</button>
-            <button type="button" class="sg-btn sg-btn-primary m-l-10" disabled>默认按钮</button>
-            <button type="button" class="sg-btn sg-btn-success m-l-10" disabled>默认按钮</button>
-            <button type="button" class="sg-btn sg-btn-info m-l-10" disabled>默认按钮</button>
-            <button type="button" class="sg-btn sg-btn-warning m-l-10" disabled>默认按钮</button>
-            <button type="button" class="sg-btn sg-btn-danger m-l-10" disabled>默认按钮</button>
+            <button type="button" class="sg-btn sg-btn-primary" disabled>主要按钮</button>
+            <button type="button" class="sg-btn sg-btn-success" disabled>成功按钮</button>
+            <button type="button" class="sg-btn sg-btn-info" disabled>信息按钮</button>
+            <button type="button" class="sg-btn sg-btn-warning" disabled>警告按钮</button>
+            <button type="button" class="sg-btn sg-btn-danger" disabled>危险按钮</button>
         </div>
+        <h5 class="sg-h5">圆角按钮</h5>
         <div class="sg-box-row">
             <button type="button" class="sg-btn sg-btn-default sg-btn-radius">默认按钮</button>
-            <button type="button" class="sg-btn sg-btn-primary sg-btn-radius m-l-10">默认按钮</button>
-            <button type="button" class="sg-btn sg-btn-success sg-btn-radius m-l-10">默认按钮</button>
-            <button type="button" class="sg-btn sg-btn-info sg-btn-radius m-l-10">默认按钮</button>
-            <button type="button" class="sg-btn sg-btn-warning sg-btn-radius m-l-10">默认按钮</button>
-            <button type="button" class="sg-btn sg-btn-danger sg-btn-radius m-l-10">默认按钮</button>
+            <button type="button" class="sg-btn sg-btn-primary sg-btn-radius">主要按钮</button>
+            <button type="button" class="sg-btn sg-btn-success sg-btn-radius">成功按钮</button>
+            <button type="button" class="sg-btn sg-btn-info sg-btn-radius">信息按钮</button>
+            <button type="button" class="sg-btn sg-btn-warning sg-btn-radius">警告按钮</button>
+            <button type="button" class="sg-btn sg-btn-danger sg-btn-radius">危险按钮</button>
         </div>
+
+
+
+        <h5 class="sg-h5">不同尺寸</h5>
+        <div class="sg-box-row">
+            <button type="button" class="sg-btn sg-btn-primary sg-btn-lg">主要按钮</button>
+            <button type="button" class="sg-btn sg-btn-primary">主要按钮</button>
+            <button type="button" class="sg-btn sg-btn-primary sg-btn-md">主要按钮</button>
+            <button type="button" class="sg-btn sg-btn-primary sg-btn-sm">主要按钮</button>
+        </div>
+        <div class="sg-box-row">
+            <button type="button" class="sg-btn sg-btn-primary sg-btn-lg" disabled>主要按钮</button>
+            <button type="button" class="sg-btn sg-btn-primary" disabled>主要按钮</button>
+            <button type="button" class="sg-btn sg-btn-primary sg-btn-md" disabled>主要按钮</button>
+            <button type="button" class="sg-btn sg-btn-primary sg-btn-sm" disabled>主要按钮</button>
+        </div>
+        <div class="sg-box-row">
+            <button type="button" class="sg-btn sg-btn-primary sg-btn-lg sg-btn-radius">主要按钮</button>
+            <button type="button" class="sg-btn sg-btn-primary sg-btn-radius">主要按钮</button>
+            <button type="button" class="sg-btn sg-btn-primary sg-btn-md sg-btn-radius">主要按钮</button>
+            <button type="button" class="sg-btn sg-btn-primary sg-btn-sm sg-btn-radius">主要按钮</button>
+        </div>
+
+
+        <h5 class="sg-h5">空心按钮</h5>
+        <div class="sg-box-row">
+            <button type="button" class="sg-btn sg-btn-default sg-btn-radius sg-btn-outline">默认按钮</button>
+            <button type="button" class="sg-btn sg-btn-primary sg-btn-radius sg-btn-outline">主要按钮</button>
+            <button type="button" class="sg-btn sg-btn-success sg-btn-radius sg-btn-outline">成功按钮</button>
+            <button type="button" class="sg-btn sg-btn-info sg-btn-radius sg-btn-outline">信息按钮</button>
+            <button type="button" class="sg-btn sg-btn-warning sg-btn-radius sg-btn-outline">警告按钮</button>
+            <button type="button" class="sg-btn sg-btn-danger sg-btn-radius sg-btn-outline">危险按钮</button>
+        </div>
+
+
+        <h5 class="sg-h5">文字按钮</h5>
+        <div class="sg-box-row">
+            <button type="button" class="sg-btn sg-btn-default sg-btn-text">默认按钮</button>
+            <button type="button" class="sg-btn sg-btn-primary sg-btn-text">主要按钮</button>
+            <button type="button" class="sg-btn sg-btn-success sg-btn-text">成功按钮</button>
+            <button type="button" class="sg-btn sg-btn-info sg-btn-text">信息按钮</button>
+            <button type="button" class="sg-btn sg-btn-warning sg-btn-text">警告按钮</button>
+            <button type="button" class="sg-btn sg-btn-danger sg-btn-text">危险按钮</button>
+            <button type="button" class="sg-btn sg-btn-text" disabled>危险按钮</button>
+        </div>
+        <h5 class="sg-h5">图标按钮</h5>
+        <h5 class="sg-h5">按钮组</h5>
+        <h5 class="sg-h5">加载中</h5>
     </div>
 
 </body>

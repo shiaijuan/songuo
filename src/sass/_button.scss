@@ -10,48 +10,144 @@
 
 .sg-btn{
   display: inline-block;
-  line-height:1;
   cursor: pointer;
   appearance: none;
   text-align: center;
   box-sizing: border-box;
   outline: none;
-  transition: .1s;
+  transition: .2s;
   font-weight: 500;
   user-select: none;
-  padding: 12px 20px;
-  font-size: 14px;
-  border-radius: 4px;
-  border:1px solid #ccc;
+  border:1px solid transparent;
+  @include button-variant(#999, transparent, transparent);
+  @include button-size(10px, 20px, 14px, 1, 4px);
   &-default{
     @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
+    &.sg-btn-outline{
+      color:$btn-default-bg;
+      &:hover{
+        color: $btn-default-color;
+      }
+    }
+    &.sg-btn-text{
+      color:$btn-default-bg;
+      &:hover{
+        color: darken($btn-default-border,15%);
+      }
+    }
   }
+
 
   &-primary{
     @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+    &.sg-btn-outline{
+      color:$btn-primary-bg;
+    }
+    &.sg-btn-text{
+      color:$btn-primary-bg;
+      &:hover{
+        color: darken($btn-primary-border,15%);
+      }
+    }
   }
+
 
   &-success{
     @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
+    &.sg-btn-outline{
+      color:$btn-success-bg;
+    }
+    &.sg-btn-text{
+      color:$btn-success-bg;
+      &:hover{
+        color: darken($btn-success-border,15%);
+      }
+    }
   }
+
 
   &-info{
     @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
+    &.sg-btn-outline{
+      color:$btn-info-bg;
+    }
+    &.sg-btn-text{
+      color:$btn-info-bg;
+      &:hover{
+        color: darken($btn-info-bg,15%);
+      }
+    }
   }
+
 
   &-warning{
     @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
+    &.sg-btn-outline{
+      color:$btn-warning-bg;
+    }
+    &.sg-btn-text{
+      color:$btn-warning-bg;
+      &:hover{
+        color:darken($btn-warning-border,15%);
+      }
+    }
   }
+
 
   &-danger{
     @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
+    &.sg-btn-outline{
+      color:$btn-danger-bg;
+    }
+    &.sg-btn-text{
+      color:$btn-danger-bg;
+      &:hover{
+        color:darken($btn-danger-border,15%);
+      }
+    }
   }
+
+
+  &-outline{
+    border-width: 2px;
+    background: transparent;
+    &:hover{
+      color: #fff;
+    }
+  }
+
+  &-text{
+    border-color: transparent;
+    background: transparent;
+    padding-left: 0;
+    padding-right: 0;
+    &:hover{
+      border-color: transparent;
+      background: transparent;
+    }
+  }
+
+  &-lg{
+    @include button-size(12px, 20px, 16px, 1, 4px);
+  }
+  &-md{
+    @include button-size(9px, 15px, 12px, 1, 4px);
+  }
+
+  &-sm{
+    @include button-size(6px, 10px, 12px, 1, 4px);
+  }
+
 
   &-radius{
     border-radius:20px;
   }
 
+
+
 }
+
+
 
 
 //$btn-link-disabled-color:        $gray-light;
