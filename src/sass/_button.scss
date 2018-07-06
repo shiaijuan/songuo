@@ -8,6 +8,7 @@
 //Base styles
 // ---------------------------------------------------
 
+$btn-group-radius:4px;
 .sg-btn{
   display: inline-block;
   cursor: pointer;
@@ -83,7 +84,8 @@
   &-warning{
     @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
     &.sg-btn-outline{
-      color:$btn-warning-bg;
+      color:;
+      color:lighten($btn-warning-bg,10%);
     }
     &.sg-btn-text{
       color:$btn-warning-bg;
@@ -97,7 +99,7 @@
   &-danger{
     @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
     &.sg-btn-outline{
-      color:$btn-danger-bg;
+      color:lighten($btn-danger-bg,10%);
     }
     &.sg-btn-text{
       color:$btn-danger-bg;
@@ -109,7 +111,7 @@
 
 
   &-outline{
-    border-width: 2px;
+    border-width: 1px;
     background: transparent;
     &:hover{
       color: #fff;
@@ -129,18 +131,44 @@
 
   &-lg{
     @include button-size(12px, 20px, 16px, 1, 4px);
+    .sg-iconfont{
+      font-size:18px;
+    }
   }
+
   &-md{
     @include button-size(9px, 15px, 12px, 1, 4px);
+    .sg-iconfont{
+      font-size:14px;
+    }
   }
 
   &-sm{
     @include button-size(6px, 10px, 12px, 1, 4px);
+    .sg-iconfont{
+      font-size:12px;
+    }
   }
 
 
   &-radius{
     border-radius:20px;
+  }
+
+
+  &-group{
+    font-size:0;
+    .sg-btn{
+      margin:0 -1px 0 0;
+      border-radius:0;
+    }
+    .sg-btn:first-child{
+      border-radius: $btn-group-radius 0 0 $btn-group-radius;
+    }
+    .sg-btn:last-child{
+      border-radius: 0 $btn-group-radius $btn-group-radius 0;
+    }
+
   }
 
 
