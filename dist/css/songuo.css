@@ -1,88 +1,533 @@
-/*
-Error: Invalid CSS after "      color:": expected expression (e.g. 1px, bold), was ";"
-        on line 87 of F:/UI/songuo/src/sass/_button.scss
-        from line 2 of F:/UI/songuo/./src/sass/songuo.scss
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
 
-82: 
-83: 
-84:   &-warning{
-85:     @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
-86:     &.sg-btn-outline{
-87:       color:;
-88:       color:lighten($btn-warning-bg,10%);
-89:     }
-90:     &.sg-btn-text{
-91:       color:$btn-warning-bg;
-92:       &:hover{
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
 
-Backtrace:
-F:/UI/songuo/src/sass/_button.scss:87
-F:/UI/songuo/./src/sass/songuo.scss:2
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1207:in `expected'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/script/lexer.rb:229:in `expected!'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/script/parser.rb:710:in `assert_expr'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/script/parser.rb:75:in `parse'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1063:in `sass_script'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:909:in `value!'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:778:in `block in try_declaration'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1183:in `rethrow'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:791:in `try_declaration'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:720:in `declaration_or_ruleset'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:685:in `block_child'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:674:in `block_contents'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:666:in `block'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:735:in `declaration_or_ruleset'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:685:in `block_child'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:677:in `block_contents'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:666:in `block'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:735:in `declaration_or_ruleset'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:685:in `block_child'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:677:in `block_contents'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:666:in `block'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:658:in `ruleset'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:684:in `block_child'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:677:in `block_contents'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:125:in `stylesheet'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:41:in `parse'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/engine.rb:409:in `_to_tree'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/engine.rb:315:in `to_tree'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/stack.rb:88:in `block in with_import'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/stack.rb:88:in `with_import'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:161:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:20:in `render'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/engine.rb:284:in `render'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:331:in `block in watch'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"      color:\": expected expression (e.g. 1px, bold), was \";\"\A         on line 87 of F:/UI/songuo/src/sass/_button.scss\A         from line 2 of F:/UI/songuo/./src/sass/songuo.scss\A \A 82: \A 83: \A 84:   &-warning{\A 85:     @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);\A 86:     &.sg-btn-outline{\A 87:       color:;\A 88:       color:lighten($btn-warning-bg,10%);\A 89:     }\A 90:     &.sg-btn-text{\A 91:       color:$btn-warning-bg;\A 92:       &:hover{"; }
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: "" "";
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+}
+
+a img {
+  border: none;
+}
+
+.sg-btn {
+  display: inline-block;
+  cursor: pointer;
+  appearance: none;
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  transition: .2s;
+  font-weight: 500;
+  user-select: none;
+  border: 1px solid transparent;
+  color: #999;
+  background-color: transparent;
+  border-color: transparent;
+  padding: 10px 20px;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 4px;
+}
+.sg-btn:focus, .sg-btn.focus {
+  color: #999;
+  background-color: transparent;
+  border-color: transparent;
+}
+.sg-btn:hover {
+  color: #999;
+  background-color: transparent;
+  border-color: transparent;
+}
+.sg-btn:active, .sg-btn.active, .open > .sg-btn.dropdown-toggle {
+  color: #999;
+  background-color: transparent;
+  border-color: transparent;
+}
+.sg-btn:active:hover, .sg-btn:active:focus, .sg-btn:active.focus, .sg-btn.active:hover, .sg-btn.active:focus, .sg-btn.active.focus, .open > .sg-btn.dropdown-toggle:hover, .open > .sg-btn.dropdown-toggle:focus, .open > .sg-btn.dropdown-toggle.focus {
+  color: #999;
+  background-color: transparent;
+  border-color: transparent;
+}
+.sg-btn:active, .sg-btn.active, .open > .sg-btn.dropdown-toggle {
+  background-image: none;
+}
+.sg-btn.disabled, .sg-btn[disabled], fieldset[disabled] .sg-btn {
+  background-color: rgba(38, 38, 38, 0);
+  border-color: rgba(38, 38, 38, 0);
+  cursor: not-allowed;
+}
+.sg-btn.disabled:hover, .sg-btn.disabled:focus, .sg-btn.disabled.focus, .sg-btn[disabled]:hover, .sg-btn[disabled]:focus, .sg-btn[disabled].focus, fieldset[disabled] .sg-btn:hover, fieldset[disabled] .sg-btn:focus, fieldset[disabled] .sg-btn.focus {
+  background-color: rgba(38, 38, 38, 0);
+  border-color: rgba(38, 38, 38, 0);
+  cursor: not-allowed;
+}
+.sg-btn .badge {
+  color: transparent;
+  background-color: #999;
+}
+.sg-btn-default {
+  color: #fff;
+  background-color: #b6c2c9;
+  border-color: #ccc;
+}
+.sg-btn-default:focus, .sg-btn-default.focus {
+  color: #fff;
+  background-color: #99aab3;
+  border-color: #8c8c8c;
+}
+.sg-btn-default:hover {
+  color: #fff;
+  background-color: #99aab3;
+  border-color: #adadad;
+}
+.sg-btn-default:active, .sg-btn-default.active, .open > .sg-btn-default.dropdown-toggle {
+  color: #fff;
+  background-color: #99aab3;
+  border-color: #adadad;
+}
+.sg-btn-default:active:hover, .sg-btn-default:active:focus, .sg-btn-default:active.focus, .sg-btn-default.active:hover, .sg-btn-default.active:focus, .sg-btn-default.active.focus, .open > .sg-btn-default.dropdown-toggle:hover, .open > .sg-btn-default.dropdown-toggle:focus, .open > .sg-btn-default.dropdown-toggle.focus {
+  color: #fff;
+  background-color: #8498a4;
+  border-color: #8c8c8c;
+}
+.sg-btn-default:active, .sg-btn-default.active, .open > .sg-btn-default.dropdown-toggle {
+  background-image: none;
+}
+.sg-btn-default.disabled, .sg-btn-default[disabled], fieldset[disabled] .sg-btn-default {
+  background-color: #e2e7ea;
+  border-color: #f2f2f2;
+  cursor: not-allowed;
+}
+.sg-btn-default.disabled:hover, .sg-btn-default.disabled:focus, .sg-btn-default.disabled.focus, .sg-btn-default[disabled]:hover, .sg-btn-default[disabled]:focus, .sg-btn-default[disabled].focus, fieldset[disabled] .sg-btn-default:hover, fieldset[disabled] .sg-btn-default:focus, fieldset[disabled] .sg-btn-default.focus {
+  background-color: #e2e7ea;
+  border-color: #f2f2f2;
+  cursor: not-allowed;
+}
+.sg-btn-default .badge {
+  color: #b6c2c9;
+  background-color: #fff;
+}
+.sg-btn-default.sg-btn-outline {
+  color: #d3dadf;
+}
+.sg-btn-default.sg-btn-outline:hover {
+  color: #fff;
+}
+.sg-btn-default.sg-btn-text {
+  color: #b6c2c9;
+}
+.sg-btn-default.sg-btn-text:hover {
+  color: #a6a6a6;
+}
+.sg-btn-primary {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+.sg-btn-primary:focus, .sg-btn-primary.focus {
+  color: #fff;
+  background-color: #286090;
+  border-color: #122b40;
+}
+.sg-btn-primary:hover {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+.sg-btn-primary:active, .sg-btn-primary.active, .open > .sg-btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+.sg-btn-primary:active:hover, .sg-btn-primary:active:focus, .sg-btn-primary:active.focus, .sg-btn-primary.active:hover, .sg-btn-primary.active:focus, .sg-btn-primary.active.focus, .open > .sg-btn-primary.dropdown-toggle:hover, .open > .sg-btn-primary.dropdown-toggle:focus, .open > .sg-btn-primary.dropdown-toggle.focus {
+  color: #fff;
+  background-color: #204d74;
+  border-color: #122b40;
+}
+.sg-btn-primary:active, .sg-btn-primary.active, .open > .sg-btn-primary.dropdown-toggle {
+  background-image: none;
+}
+.sg-btn-primary.disabled, .sg-btn-primary[disabled], fieldset[disabled] .sg-btn-primary {
+  background-color: #64a0d3;
+  border-color: #5094ce;
+  cursor: not-allowed;
+}
+.sg-btn-primary.disabled:hover, .sg-btn-primary.disabled:focus, .sg-btn-primary.disabled.focus, .sg-btn-primary[disabled]:hover, .sg-btn-primary[disabled]:focus, .sg-btn-primary[disabled].focus, fieldset[disabled] .sg-btn-primary:hover, fieldset[disabled] .sg-btn-primary:focus, fieldset[disabled] .sg-btn-primary.focus {
+  background-color: #64a0d3;
+  border-color: #5094ce;
+  cursor: not-allowed;
+}
+.sg-btn-primary .badge {
+  color: #337ab7;
+  background-color: #fff;
+}
+.sg-btn-primary.sg-btn-outline {
+  color: #5094ce;
+}
+.sg-btn-primary.sg-btn-text {
+  color: #337ab7;
+}
+.sg-btn-primary.sg-btn-text:hover {
+  color: #1d4568;
+}
+.sg-btn-success {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+.sg-btn-success:focus, .sg-btn-success.focus {
+  color: #fff;
+  background-color: #449d44;
+  border-color: #255625;
+}
+.sg-btn-success:hover {
+  color: #fff;
+  background-color: #449d44;
+  border-color: #398439;
+}
+.sg-btn-success:active, .sg-btn-success.active, .open > .sg-btn-success.dropdown-toggle {
+  color: #fff;
+  background-color: #449d44;
+  border-color: #398439;
+}
+.sg-btn-success:active:hover, .sg-btn-success:active:focus, .sg-btn-success:active.focus, .sg-btn-success.active:hover, .sg-btn-success.active:focus, .sg-btn-success.active.focus, .open > .sg-btn-success.dropdown-toggle:hover, .open > .sg-btn-success.dropdown-toggle:focus, .open > .sg-btn-success.dropdown-toggle.focus {
+  color: #fff;
+  background-color: #398439;
+  border-color: #255625;
+}
+.sg-btn-success:active, .sg-btn-success.active, .open > .sg-btn-success.dropdown-toggle {
+  background-image: none;
+}
+.sg-btn-success.disabled, .sg-btn-success[disabled], fieldset[disabled] .sg-btn-success {
+  background-color: #91cf91;
+  border-color: #80c780;
+  cursor: not-allowed;
+}
+.sg-btn-success.disabled:hover, .sg-btn-success.disabled:focus, .sg-btn-success.disabled.focus, .sg-btn-success[disabled]:hover, .sg-btn-success[disabled]:focus, .sg-btn-success[disabled].focus, fieldset[disabled] .sg-btn-success:hover, fieldset[disabled] .sg-btn-success:focus, fieldset[disabled] .sg-btn-success.focus {
+  background-color: #91cf91;
+  border-color: #80c780;
+  cursor: not-allowed;
+}
+.sg-btn-success .badge {
+  color: #5cb85c;
+  background-color: #fff;
+}
+.sg-btn-success.sg-btn-outline {
+  color: #80c780;
+}
+.sg-btn-success.sg-btn-text {
+  color: #5cb85c;
+}
+.sg-btn-success.sg-btn-text:hover {
+  color: #357935;
+}
+.sg-btn-info {
+  color: #fff;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+.sg-btn-info:focus, .sg-btn-info.focus {
+  color: #fff;
+  background-color: #31b0d5;
+  border-color: #1b6d85;
+}
+.sg-btn-info:hover {
+  color: #fff;
+  background-color: #31b0d5;
+  border-color: #269abc;
+}
+.sg-btn-info:active, .sg-btn-info.active, .open > .sg-btn-info.dropdown-toggle {
+  color: #fff;
+  background-color: #31b0d5;
+  border-color: #269abc;
+}
+.sg-btn-info:active:hover, .sg-btn-info:active:focus, .sg-btn-info:active.focus, .sg-btn-info.active:hover, .sg-btn-info.active:focus, .sg-btn-info.active.focus, .open > .sg-btn-info.dropdown-toggle:hover, .open > .sg-btn-info.dropdown-toggle:focus, .open > .sg-btn-info.dropdown-toggle.focus {
+  color: #fff;
+  background-color: #269abc;
+  border-color: #1b6d85;
+}
+.sg-btn-info:active, .sg-btn-info.active, .open > .sg-btn-info.dropdown-toggle {
+  background-image: none;
+}
+.sg-btn-info.disabled, .sg-btn-info[disabled], fieldset[disabled] .sg-btn-info {
+  background-color: #9bd8eb;
+  border-color: #85d0e7;
+  cursor: not-allowed;
+}
+.sg-btn-info.disabled:hover, .sg-btn-info.disabled:focus, .sg-btn-info.disabled.focus, .sg-btn-info[disabled]:hover, .sg-btn-info[disabled]:focus, .sg-btn-info[disabled].focus, fieldset[disabled] .sg-btn-info:hover, fieldset[disabled] .sg-btn-info:focus, fieldset[disabled] .sg-btn-info.focus {
+  background-color: #9bd8eb;
+  border-color: #85d0e7;
+  cursor: not-allowed;
+}
+.sg-btn-info .badge {
+  color: #5bc0de;
+  background-color: #fff;
+}
+.sg-btn-info.sg-btn-outline {
+  color: #85d0e7;
+}
+.sg-btn-info.sg-btn-text {
+  color: #5bc0de;
+}
+.sg-btn-info.sg-btn-text:hover {
+  color: #28a1c5;
+}
+.sg-btn-warning {
+  color: #fff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+.sg-btn-warning:focus, .sg-btn-warning.focus {
+  color: #fff;
+  background-color: #ec971f;
+  border-color: #985f0d;
+}
+.sg-btn-warning:hover {
+  color: #fff;
+  background-color: #ec971f;
+  border-color: #d58512;
+}
+.sg-btn-warning:active, .sg-btn-warning.active, .open > .sg-btn-warning.dropdown-toggle {
+  color: #fff;
+  background-color: #ec971f;
+  border-color: #d58512;
+}
+.sg-btn-warning:active:hover, .sg-btn-warning:active:focus, .sg-btn-warning:active.focus, .sg-btn-warning.active:hover, .sg-btn-warning.active:focus, .sg-btn-warning.active.focus, .open > .sg-btn-warning.dropdown-toggle:hover, .open > .sg-btn-warning.dropdown-toggle:focus, .open > .sg-btn-warning.dropdown-toggle.focus {
+  color: #fff;
+  background-color: #d58512;
+  border-color: #985f0d;
+}
+.sg-btn-warning:active, .sg-btn-warning.active, .open > .sg-btn-warning.dropdown-toggle {
+  background-image: none;
+}
+.sg-btn-warning.disabled, .sg-btn-warning[disabled], fieldset[disabled] .sg-btn-warning {
+  background-color: #f6ce95;
+  border-color: #f4c37d;
+  cursor: not-allowed;
+}
+.sg-btn-warning.disabled:hover, .sg-btn-warning.disabled:focus, .sg-btn-warning.disabled.focus, .sg-btn-warning[disabled]:hover, .sg-btn-warning[disabled]:focus, .sg-btn-warning[disabled].focus, fieldset[disabled] .sg-btn-warning:hover, fieldset[disabled] .sg-btn-warning:focus, fieldset[disabled] .sg-btn-warning.focus {
+  background-color: #f6ce95;
+  border-color: #f4c37d;
+  cursor: not-allowed;
+}
+.sg-btn-warning .badge {
+  color: #f0ad4e;
+  background-color: #fff;
+}
+.sg-btn-warning.sg-btn-outline {
+  color: #f4c37d;
+}
+.sg-btn-warning.sg-btn-text {
+  color: #f0ad4e;
+}
+.sg-btn-warning.sg-btn-text:hover {
+  color: #c77c11;
+}
+.sg-btn-danger {
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+.sg-btn-danger:focus, .sg-btn-danger.focus {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #761c19;
+}
+.sg-btn-danger:hover {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+.sg-btn-danger:active, .sg-btn-danger.active, .open > .sg-btn-danger.dropdown-toggle {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+.sg-btn-danger:active:hover, .sg-btn-danger:active:focus, .sg-btn-danger:active.focus, .sg-btn-danger.active:hover, .sg-btn-danger.active:focus, .sg-btn-danger.active.focus, .open > .sg-btn-danger.dropdown-toggle:hover, .open > .sg-btn-danger.dropdown-toggle:focus, .open > .sg-btn-danger.dropdown-toggle.focus {
+  color: #fff;
+  background-color: #ac2925;
+  border-color: #761c19;
+}
+.sg-btn-danger:active, .sg-btn-danger.active, .open > .sg-btn-danger.dropdown-toggle {
+  background-image: none;
+}
+.sg-btn-danger.disabled, .sg-btn-danger[disabled], fieldset[disabled] .sg-btn-danger {
+  background-color: #e7908e;
+  border-color: #e27c79;
+  cursor: not-allowed;
+}
+.sg-btn-danger.disabled:hover, .sg-btn-danger.disabled:focus, .sg-btn-danger.disabled.focus, .sg-btn-danger[disabled]:hover, .sg-btn-danger[disabled]:focus, .sg-btn-danger[disabled].focus, fieldset[disabled] .sg-btn-danger:hover, fieldset[disabled] .sg-btn-danger:focus, fieldset[disabled] .sg-btn-danger.focus {
+  background-color: #e7908e;
+  border-color: #e27c79;
+  cursor: not-allowed;
+}
+.sg-btn-danger .badge {
+  color: #d9534f;
+  background-color: #fff;
+}
+.sg-btn-danger.sg-btn-outline {
+  color: #e27c79;
+}
+.sg-btn-danger.sg-btn-text {
+  color: #d9534f;
+}
+.sg-btn-danger.sg-btn-text:hover {
+  color: #a02622;
+}
+.sg-btn-outline {
+  border-width: 1px;
+  background: transparent;
+}
+.sg-btn-outline:hover {
+  color: #fff;
+}
+.sg-btn-loading {
+  position: relative;
+  pointer-events: none;
+}
+.sg-btn-loading .loading:before {
+  line-height: 1;
+  vertical-align: baseline;
+  display: inline-block;
+  animation: rotating 2s linear infinite;
+  -moz-animation: rotating 2s linear infinite;
+  /* Firefox */
+  -webkit-animation: rotating 2s linear infinite;
+  /* Safari and Chrome */
+  -o-animation: rotating 2s linear infinite;
+  /* Opera */
+}
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+    transform-origin: center;
+  }
+  to {
+    transform: rotate(360deg);
+    transform-origin: center;
+  }
+}
+@-moz-keyframes rotating {
+  from {
+    transform: rotate(0deg);
+    transform-origin: center;
+  }
+  to {
+    transform: rotate(360deg);
+    transform-origin: center;
+  }
+}
+@-webkit-keyframes rotating {
+  from {
+    transform: rotate(0deg);
+    transform-origin: center;
+  }
+  to {
+    transform: rotate(360deg);
+    transform-origin: center;
+  }
+}
+@-o-keyframes rotating {
+  from {
+    transform: rotate(0deg);
+    transform-origin: center;
+  }
+  to {
+    transform: rotate(360deg);
+    transform-origin: center;
+  }
+}
+.sg-btn-text {
+  border-color: transparent;
+  background: transparent;
+  padding-left: 0;
+  padding-right: 0;
+}
+.sg-btn-text:hover {
+  border-color: transparent;
+  background: transparent;
+}
+.sg-btn-lg {
+  padding: 12px 20px;
+  font-size: 16px;
+  line-height: 1;
+  border-radius: 4px;
+}
+.sg-btn-lg .sg-iconfont {
+  font-size: 18px;
+}
+.sg-btn-md {
+  padding: 9px 15px;
+  font-size: 12px;
+  line-height: 1;
+  border-radius: 4px;
+}
+.sg-btn-md .sg-iconfont {
+  font-size: 14px;
+}
+.sg-btn-sm {
+  padding: 6px 10px;
+  font-size: 12px;
+  line-height: 1;
+  border-radius: 4px;
+}
+.sg-btn-sm .sg-iconfont {
+  font-size: 12px;
+}
+.sg-btn-radius {
+  border-radius: 20px;
+}
+.sg-btn-group {
+  font-size: 0;
+}
+.sg-btn-group .sg-btn {
+  margin-right: -1px;
+  border-radius: 0;
+}
+.sg-btn-group .sg-btn:first-child {
+  border-radius: 4px 0 0 4px;
+}
+.sg-btn-group .sg-btn:last-child {
+  border-radius: 0 4px 4px 0;
+}
