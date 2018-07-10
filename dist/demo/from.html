@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+    <style>
+        .sg-box{
+            padding: 10px 15px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #fff;
+        }
+        .sg-boxes{
+            border:2px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .sg-boxes .sg-box{
+            margin-bottom:0;
+            border-radius:0;
+            border:none;
+        }
+        .sg-boxes .sg-box:first-child{
+            border-radius:3px 3px 0 0;
+        }
+
+        .sg-boxes .sg-box:last-child{
+            border-radius:0 0 3px 3px;
+        }
+
+        .sg-boxes .sg-box+.sg-box{
+            border-top:1px solid #ddd;
+        }
+        .sg-boxes .sg-box-body{
+            padding: 15px;
+        }
+        .sg-box-header,
+        .sg-box-footer{
+            background: #f9f9f9;
+        }
+
+        .sg-boxes.sg-box-shadow{
+            box-shadow: 0 2px 10px 3px rgba(34, 36, 38, 0.12);
+        }
+    </style>
+</head>
+<body>
+    <div class="sg-box">
+        我是box
+    </div>
+
+    <div class="sg-boxes">
+        <div class="sg-box">box</div>
+        <div class="sg-box">
+            box
+        </div>
+        <div class="sg-box">box</div>
+    </div>
+
+    <div class="sg-boxes">
+        <div class="sg-box sg-box-header">box-header</div>
+        <div class="sg-box sg-box-body">
+            box-body
+        </div>
+        <div class="sg-box sg-box-footer">box-footer</div>
+    </div>
+
+    <div class="sg-boxes sg-box-shadow">
+        <div class="sg-box sg-box-header">box-header</div>
+        <div class="sg-box sg-box-body">
+            box-body
+        </div>
+        <div class="sg-box sg-box-footer">box-footer</div>
+    </div>
+
+
+</body>
+</html>
